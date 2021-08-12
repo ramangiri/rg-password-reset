@@ -12,7 +12,7 @@ function RegisterUser() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const connect = await fetch(
-      process.env.CLIENT_SERVER,
+      process.env.SERVER,
       {
         method: "POST",
         body: JSON.stringify({ fullname, email, password }),
